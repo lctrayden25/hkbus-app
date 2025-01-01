@@ -14,7 +14,7 @@ const SearchScreen = () => {
 				data={data?.data}
 				renderItem={({ item }) => (
 					<Pressable
-						onPress={() => router.push("/search")}
+						onPress={() => router.push(`/search/${item.route}`)}
 						className="flex flex-row justify-between p-5 w-full border-b border-gray-200"
 					>
 						<Text>{item.route}</Text>

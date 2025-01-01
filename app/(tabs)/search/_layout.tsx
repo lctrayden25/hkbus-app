@@ -1,13 +1,9 @@
 import { View, Text } from "react-native";
 import React from "react";
-import { Slot } from "expo-router";
+import { Slot, Stack } from "expo-router";
 
 const SearchLayout = () => {
-	return (
-		<View>
-			<Slot />
-		</View>
-	);
+	return <Slot />;
 };
 
 export default SearchLayout;

@@ -13,6 +13,7 @@ export default function RootLayout() {
 		<View style={{ flex: 1, paddingTop: insets.top }} className="bg-orange-400">
 			<Stack>
 				<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+				<Stack.Screen name="test" options={{ title: "測試" }} />
 			</Stack>
 		</View>
 	);

@@ -10,12 +10,12 @@ const SearchScreen = () => {
 	return (
 		<View>
 			<FlatList
-				className="p-5"
+				className="p-5 bg-orange-50"
 				data={data?.data}
 				renderItem={({ item }) => (
 					<Pressable
 						onPress={() => router.push("/search")}
-						className="flex flex-row justify-between p-5 w-full"
+						className="flex flex-row justify-between p-5 w-full border-b border-gray-200"
 					>
 						<Text>{item.route}</Text>
 						<Text className="ml-10">{item.dest_tc}</Text>

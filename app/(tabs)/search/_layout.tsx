@@ -5,7 +5,6 @@ import { Slot } from "expo-router";
 const SearchLayout = () => {
 	return (
 		<View>
-			<Text>Search Layout</Text>
 			<Slot />
 		</View>
 	);

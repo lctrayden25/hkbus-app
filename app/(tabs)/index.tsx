@@ -1,13 +1,17 @@
-import { View, Text } from "react-native";
+import { View, Text, FlatList, Pressable } from "react-native";
 import React from "react";
-import { Stack } from "expo-router";
+import { useKmbRouteList } from "@/hooks/api";
+import { Link, useRouter } from "expo-router";
 
-const TabIndex = () => {
+const HomeScreen = () => {
+	const { data } = useKmbRouteList();
+	const router = useRouter();
+
 	return (
-		<View>
-			<Text>index</Text>
+		<View style={{ flex: 1 }}>
+			<Text>Home Screen</Text>
 		</View>
 	);
 };
 
-export default TabIndex;
+export default HomeScreen;

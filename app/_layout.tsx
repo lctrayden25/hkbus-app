@@ -8,7 +8,7 @@ import { View, Text } from "react-native";
 export default function RootLayout() {
 	// const insets = useSafeAreaInsets();
 	const insets = useSafeAreaInsets();
-
+	console.log("test");
 	return (
 		<View style={{ flex: 1, paddingTop: insets.top }} className="bg-orange-400">
 			<Stack>
